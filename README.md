@@ -19,9 +19,7 @@ The KPI which I have chosen to use is the Annual Forecasted Revenue for each pro
 while using an annual data can eliminate the price seasonality phenomenon of each property. 
 The above KPI can be calculated by multiplying the 'price' field (column) by the diffrence between 365 (days) and the 'availability_365' field (column), while the last difference result gives the forecasted
 number of days in which a givven property is forecasted to be rented in the coming year, resulting in a Revenue formation for its host, and as follow:
-
-  KPI = 'price' * (365 - 'availability_365')
-
+KPI = 'price' * (365 - 'availability_365')
 Prior to the formation of the abpve KPI column it was needed to convert the 'price' field (column) variable type from currenct to float.  
 
 ## Conclusion
