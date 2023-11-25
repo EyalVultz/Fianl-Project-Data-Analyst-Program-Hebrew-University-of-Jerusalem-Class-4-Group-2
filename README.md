@@ -21,7 +21,9 @@ The Forecasted Revenue in the Coming year for each property is calculated by mul
 difference result gives the forecasted number of days in which a givven property is forecasted to be rented in the coming year, resulting in a Revenue formation for its host, and as follow:
 'price' * (365 - 'availability_365')
 These calculations results form a new column named 'forecasted revenue' in the DataFrame listings_clean_missing_values_Washington. 
-Prior to the formation of the abpve KPI column it was needed to convert the 'price' field (column) variable type from currenct to float.  
+Prior to the formation of the abpve KPI column it was needed to convert the 'price' field (column) variable type from currenct to float.
+listings_clean_missing_values_Washington DataFrame is analyzed then by the describe() method resulting in that the Top 25% (Q1) of the properties in Washington, United States are forecasted to gain
+in the coming year between 55,927 USD to 2,190,000 USD.
 
 ## Conclusion
 The recommendation to the potential investor in properties next year in Washington, United States, based on the above Data Analysis, is for Entire Home type properties, located in Seattle, which their 
