@@ -26,9 +26,10 @@ listings_clean_missing_values_Washington DataFrame is analyzed then by the descr
 in the coming year between 55,927 USD to 2,190,000 USD.
 listings_clean_missing_values_Washington DataFrame is filtered then according to the above by the query() method, while forming a new Dataframe named listings_clean_missing_values_Washington_Q1.
 
-## Further filteration by Property Type
-
-
+## Analyzing Top 25% properties by Coming year Forecasted Revenue by Property Type
+Analyzing Top 25% properties in Washington, United States by Coming year Forecasted Revenue by Property Type, while using the value_counts() method followed by evaluating the result by a Bar graph using the
+the plot() method reveals that the these properties significantly most common type is Entire Home. istings_clean_missing_values_Washington_Q1 DataFrame is filtered then according to the above by the 
+str.contains() method, while forming a new Dataframe named listings_clean_missing_values_Washington_Q1_Entire_home. 
 
 ## Conclusion
 The recommendation to the potential investor in properties next year in Washington, United States, based on the above Data Analysis, is for Entire Home type properties, located in Seattle, which their 
