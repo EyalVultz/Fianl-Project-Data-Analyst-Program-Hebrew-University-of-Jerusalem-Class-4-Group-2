@@ -5,17 +5,18 @@ This project goal is to consult a potential investor regading his investing stra
 In this stage the relevant Python libraries, Pandas, Numpy, and Matplotlib, are imported.
 
 ## Reading the data file
-This tage includes the data file 'listings.csv' reading into listings, a Panda's DataFrame.
+This stage includes the data file 'listings.csv' reading into listings, a Panda's DataFrame.
 
 ## Data cleaning
-The DataFrame is filtered from duplicated records (rows) by the drop_duplicates() method and from irrelevant fileds (columns) to the into a new DataFrame, listings_clean. 
+listings is filtered from duplicated records (rows) by the drop_duplicates() method and from irrelevant fileds (columns) by the drop () method to a new DataFrame, listings_clean. 
+This Dataframe is cleaned from rows containing Missing values by the dropna() method to a new DataFrame listings_clean_missing_values.
 
-## Filtering Missing values
-listings_clean_missing_values = listings_clean.dropna()
+## Filtering out properties (rows) not located in Washington
+listings_clean_missing_values is cleaned from properties (rows) which are not located in Washington based on the 'neighbourhood' field.
 
 ## Creating a column for the KPI calculation
-listings_clean_missing_values_Washington['price'] = listings_clean_missing_values_Washington['price'].replace('\$', '', regex=True).replace('\,', '', regex=True).astype(float)
-listings_clean_missing_values_Washington["forecasted_revenue"] = (listings_clean_missing_values_Washington["price"]*(365-listings_clean_missing_values_Washington["availability_365"]))
+The KPI which I have chosen to use for this project is the 
+Prior to the formation of the abpve KPI new column it was needed to convert the 'price' field (column) vartable type from currenct to float.  
 
 ## Conclusion
 The recommendation to the potential investor in properties next year in Washington, United States, based on the above Data Analysis, is for Entire Home type properties, located in Seattle, which their room type is
