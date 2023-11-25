@@ -22,5 +22,5 @@ number of days in which a givven property is forecasted to be rented, resulting 
 Prior to the formation of the abpve KPI column it was needed to convert the 'price' field (column) variable type from currenct to float.  
 
 ## Conclusion
-The recommendation to the potential investor in properties next year in Washington, United States, based on the above Data Analysis, is for Entire Home type properties, located in Seattle, which their room type is
-Entire Home / Apartment, and which are suitable to accommodate 6 people.
+The recommendation to the potential investor in properties next year in Washington, United States, based on the above Data Analysis, is for Entire Home type properties, located in Seattle, which their 
+room type is Entire Home / Apartment, and which are suitable to accommodate 6 people.
