@@ -17,11 +17,11 @@ listings_clean_missing_values is cleaned from properties (rows) which are not lo
 ## Creating a new column for the KPI calculation
 The KPI which I have chosen to use is the Top 25% (Q1) propertirs according to thier Forecasted Revenue in the Coming year, which is the most important issue for an investor, in the abscence of the properties'
 purchasing price data, while using an annual data can eliminate the price seasonality phenomenon of each property. 
-The Forecasted Revenue in the Coming year for each property is calculated by multiplying the 'price' field (column) by the diffrence between 365 (days) and the 'availability_365' field (column), while the last
-difference result gives the forecasted number of days in which a givven property is forecasted to be rented in the coming year, resulting in a Revenue formation for its host, and as follow:
+The Forecasted Revenue in the Coming year for each property is calculated by multiplying the 'price' field (column) by the diffrence between 365 (days) and the 'availability_365' field (column), while the 
+last difference result gives the forecasted number of days in which a givven property is forecasted to be rented in the coming year, resulting in a Revenue formation for its host, and as follow:
 'price' * (365 - 'availability_365')
-These calculations results form a new column named 'forecasted revenue' in the DataFrame listings_clean_missing_values_Washington. 
-Prior to the formation of the abpve KPI column it was needed to convert the 'price' field (column) variable type from currenct to float.
+These calculations' results form a new column named 'forecasted revenue' in the DataFrame listings_clean_missing_values_Washington. 
+Prior to the formation of the abpve KPI column it was needed to convert the 'price' field (column) variable type from currency to float.
 listings_clean_missing_values_Washington DataFrame is analyzed then by the describe() method resulting in that the Top 25% (Q1) of the properties in Washington, United States are forecasted to gain
 in the coming year between 55,927 USD to 2,190,000 USD.
 
