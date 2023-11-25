@@ -27,15 +27,17 @@ in the coming year between 55,927 USD to 2,190,000 USD.
 listings_clean_missing_values_Washington DataFrame is filtered then according to the above by the query() method, while forming a new Dataframe named listings_clean_missing_values_Washington_Q1.
 
 ## Analyzing Top 25% properties in Washington, United States by Coming year Forecasted Revenue, by their Property Type
-Analyzing Top 25% properties in Washington, United States by Coming year Forecasted Revenue by Property Type, while using the value_counts() method followed by evaluating the result by a Bar graph using the
-the plot() method reveals that the these properties significantly most common type is Entire Home. istings_clean_missing_values_Washington_Q1 DataFrame is filtered then according to the above by the 
+Analyzing Top 25% properties in Washington, United States by Coming year Forecasted Revenue by Property Type, while using the value_counts() method followed by evaluating the results by a Bar graph using the
+the plot() method, reveals that the these properties significantly most common type is Entire Home. istings_clean_missing_values_Washington_Q1 DataFrame is filtered then according to the above by the 
 str.contains() method, while forming a new Dataframe named listings_clean_missing_values_Washington_Q1_Entire_home. 
 
 ## Further Filtration by Neighbourhood and then by Room Type
 Trying to further specify the above Q1 properties by their Neighbourhood revealed that all of them are located in Seattle, and their Room Type is Entire home/apt.
 
-## Final filtration by 
+## Final Filtration by Accommodates Number
+Analyzing listings_clean_missing_values_Washington_Q1_Entire_home DataFrame by the number of Accommodates, while using the value_counts() method followed by evaluating the results by a Bar graph using the
+the plot() method, reveals that the these properties significantly most common number of Accommodates is 6 people.
 
 ## Conclusion
-The recommendation to the potential investor in properties next year in Washington, United States, based on the above Data Analysis, is for Entire Home type properties, located in Seattle, which their 
-room type is Entire Home / Apartment, and which are suitable to accommodate 6 people.
+Following the above Data Analysis it can be recommended to the potential investor to purchase properties in Washington, United States which are Entire Home by type, located in Seattle, which their 
+room type is Entire Home / Apartment, and which are suitable to accommodate 6 people, following that these properties are forcasted to gain the higest revenue in the coming year.
