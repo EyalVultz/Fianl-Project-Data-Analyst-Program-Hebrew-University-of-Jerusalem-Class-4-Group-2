@@ -26,7 +26,8 @@ listings_clean_missing_values_Washington DataFrame is analyzed then by the descr
 in the coming year between 55,927 USD to 2,190,000 USD.
 listings_clean_missing_values_Washington DataFrame is filtered then according to the above, while forming a new Dataframe named listings_clean_missing_values_Washington_Q1.
 
-## A
+## Further filteration by Property Type
+
 
 ## Conclusion
 The recommendation to the potential investor in properties next year in Washington, United States, based on the above Data Analysis, is for Entire Home type properties, located in Seattle, which their 
