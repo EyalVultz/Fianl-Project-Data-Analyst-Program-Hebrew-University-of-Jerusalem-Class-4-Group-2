@@ -1,9 +1,17 @@
 # Fianl Project Data Analyst Program Hebrew University of Jerusalem
 
 ## Project Overview
-This project goal is to consult a potential investor regading his investing strategy in short-term rental properties in Washington, United States, 
-based on Python code analysis of an Airbnb datafile, which contains the following stages:
+This project goal was to consult a potential investor regading his investing strategy in short-term rental properties in Washington, United States. 
 
+## Data Sources
+Airbnb data file 'isting.csv'
+
+## Tools
+- Microsoft Excel - Primary data overview
+- Python - Data Analysis and Visualization
+- Microsoft PowerPoint - Reporting 
+
+The Data Ananlysis contained the following Stages
 ## Stage 1: Importing relevant Python libraries
 In this stage the relevant Python libraries, Pandas, Numpy, and Matplotlib, are imported.
 
