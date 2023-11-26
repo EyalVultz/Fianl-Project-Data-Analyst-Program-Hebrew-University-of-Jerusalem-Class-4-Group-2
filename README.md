@@ -4,7 +4,7 @@
 - [Project Overview](#Project-Overview)
 - [Data Sources](#Data-Sources)
 - [Tools](#Tools)
-- [Exploratory Data Analysis (EDA)](#Exploratory-Data-Analysis-(EDA))
+- [Exploratory Data Analysis](#Exploratory-Data-Analysis)
 
 
 
@@ -24,7 +24,7 @@ This project goal was to consult a potential investor regading his investing str
 
 
 ## Exploratory Data Analysis (EDA)
-THE EDA of this projects includes answering the following questions:
+The EDA of this projects includes answering the following questions:
 1. What is Type of the Top 25% (Q1) Properties by forecasted Coming year Revenue in Washington, United States?
 2. In which Neighbourhood in Washington, United States most of the above Q1 Properties are located?
 3. What is the most common Room Type of the above 2 Properties?
