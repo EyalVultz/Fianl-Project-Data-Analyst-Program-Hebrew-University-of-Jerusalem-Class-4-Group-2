@@ -36,7 +36,7 @@ while forming a new DataFrame, listings_clean_missing_values_Washington.
 ### Stage 5: Creating a new column for the KPI calculation
 The KPI which I have chosen to use is the Top 25% (Q1) propertirs according to thier Forecasted Revenue in the Coming year, which is the most important issue for
 an investor, in the abscence of the properties'
-purchasing price data, while using an annual data can eliminate the price seasonality phenomenon of each property. 
+purchasing price data. The use of an annual data eliminates the price seasonality phenomenon of each property. 
 The Forecasted Revenue in the Coming year for each property is calculated by multiplying the 'price' field (column) by the diffrence between 365 (days) and the
 'availability_365' field (column), while the 
 last difference result gives the forecasted number of days in which a givven property is forecasted to be rented in the coming year, resulting in a Revenue 
