@@ -41,7 +41,7 @@ The Forecasted Revenue in the Coming year for each property is calculated by mul
 'availability_365' field (column), while the 
 last difference result gives the forecasted number of days in which a givven property is forecasted to be rented in the coming year, resulting in a Revenue 
 formation for its host, and as follow:
-  'price' * (365 - 'availability_365')
+'price' * (365 - 'availability_365').
 These calculations' results form a new column named 'forecasted revenue' in the DataFrame listings_clean_missing_values_Washington. 
 Prior to the formation of the abpve KPI column it was needed to convert the 'price' field (column) variable type from currency to float.
 listings_clean_missing_values_Washington DataFrame is analyzed then by the describe() method resulting in that the Top 25% (Q1) of the properties in Washington, 
