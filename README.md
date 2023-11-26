@@ -4,12 +4,13 @@
 This project goal was to consult a potential investor regading his investing strategy in short-term rental properties in Washington, United States. 
 
 ## Data Sources
-Airbnb data file 'isting.csv'
+ - 'listing.csv' - Airbnb data file.
+ - 'Inside Airbnb Data Dictionary.csv' - Table which contains indication of each field (column) type and a short explanation.
 
 ## Tools
-- Microsoft Excel - Primary data overview
-- Python - Data Analysis and Visualization
-- Microsoft PowerPoint - Reporting 
+- Microsoft Excel - Primary data overview.
+- Python - Data Analysis and Visualization (graphs).
+- Microsoft PowerPoint - Reporting. 
 
 The Data Ananlysis contained the following Stages
 ## Stage 1: Importing relevant Python libraries
