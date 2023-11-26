@@ -3,14 +3,17 @@
 ## Project Overview
 This project goal was to consult a potential investor regading his investing strategy in short-term rental properties in Washington, United States. 
 
+
 ## Data Sources
  - 'listing.csv' - Airbnb data file.
  - 'Inside Airbnb Data Dictionary.csv' - Table which contains indication of each field (column) type and a short explanation.
+
 
 ## Tools
 - Microsoft Excel - Primary data overview.
 - Python (Jupyter Notebook) - Data Analysis and Visualization (graphs).
 - Microsoft PowerPoint - Reporting. 
+
 
 ## Data Analysis
 The Data Ananlysis contained the following Stages:
@@ -59,6 +62,7 @@ Trying to further specify the above Q1 properties by their Neighbourhood reveale
 ### Stage 8: Final Filtration by Accommodates Number
 Analyzing listings_clean_missing_values_Washington_Q1_Entire_home DataFrame by the number of Accommodates, while using the value_counts() method followed by 
 evaluating the results by a Bar graph using the the plot() method, reveals that the these properties significantly most common number of Accommodates is 6 people.
+
 
 ## Conclusion
 Following the above Data Analysis it can be recommended to the potential investor to purchase properties in Washington, United States which are Entire Home by
