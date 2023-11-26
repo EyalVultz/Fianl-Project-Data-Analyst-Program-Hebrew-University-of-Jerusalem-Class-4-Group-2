@@ -11,13 +11,13 @@ In this stage the relevant Python libraries, Pandas, Numpy, and Matplotlib, are 
 This stage includes the data file 'listings.csv' reading into listings, a Panda's DataFrame.
 
 ## Stage 3: Data cleaning
-listings is filtered from duplicated records (rows) by the drop_duplicates() method and from irrelevant fileds (columns) by the drop () method
+listings is filtered in this stage from duplicated records (rows) by the drop_duplicates() method and from irrelevant fileds (columns) by the drop () method
 to a new DataFrame, listings_clean. This Dataframe is cleaned from rows containing Missing values by the dropna() method to a new DataFrame 
 listings_clean_missing_values.
 
 ## Stage 4: Filtering out properties (rows) not located in Washington
-listings_clean_missing_values is cleaned from properties (rows) which are not located in Washington based on the 'neighbourhood' field and form a new DataFrame,
-listings_clean_missing_values_Washington.
+In this stage listings_clean_missing_values is cleaned from properties (rows) which are not located in Washington based on the 'neighbourhood' field and form a new 
+DataFrame, listings_clean_missing_values_Washington.
 
 ## Stage 5: Creating a new column for the KPI calculation
 The KPI which I have chosen to use is the Top 25% (Q1) propertirs according to thier Forecasted Revenue in the Coming year, which is the most important issue for
@@ -37,10 +37,10 @@ listings_clean_missing_values_Washington DataFrame is filtered then according to
 listings_clean_missing_values_Washington_Q1.
 
 ## Stage 6: Analyzing Top 25% properties in Washington, United States by Coming year Forecasted Revenue, by their Property Type
-Analyzing Top 25% properties in Washington, United States by Coming year Forecasted Revenue by Property Type, while using the value_counts() method followed by 
-evaluating the results by a Bar graph using the the plot() method, reveals that the these properties significantly most common type is Entire Home. 
-istings_clean_missing_values_Washington_Q1 DataFrame is filtered then according to the above by the 
-str.contains() method, while forming a new Dataframe named listings_clean_missing_values_Washington_Q1_Entire_home. 
+Analyzing Top 25% properties in Washington, United States by Coming year Forecasted Revenue by Property Type is performed in this stage, while using the
+value_counts() method, followed by evaluating the results by a Bar graph using the the plot() method, reveals that the these properties significantly most 
+common type is Entire Home. listings_clean_missing_values_Washington_Q1 DataFrame is filtered then according to the above by the str.contains() method, while
+forming a new Dataframe named listings_clean_missing_values_Washington_Q1_Entire_home. 
 
 ## Stage 7: Further Filtration by Neighbourhood and then by Room Type
 Trying to further specify the above Q1 properties by their Neighbourhood revealed that all of them are located in Seattle, and their Room Type is Entire home/apt.
