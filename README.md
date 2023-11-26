@@ -9,7 +9,7 @@ This project goal was to consult a potential investor regading his investing str
 
 ## Tools
 - Microsoft Excel - Primary data overview.
-- Python (Jupyter Notebook)- Data Analysis and Visualization (graphs).
+- Python (Jupyter Notebook) - Data Analysis and Visualization (graphs).
 - Microsoft PowerPoint - Reporting. 
 
 
