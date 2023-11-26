@@ -43,7 +43,7 @@ last difference result gives the forecasted number of days in which a givven pro
 formation for its host, and as follow:
 'price' * (365 - 'availability_365').
 These calculations' results form a new column named 'forecasted revenue' in the DataFrame listings_clean_missing_values_Washington. 
-Prior to the formation of the abpve KPI column it was needed to convert the 'price' field (column) variable type from currency to float.
+Prior to the formation of the abpve KPI column it is needed to convert the 'price' field (column) variable type from currency to float.
 listings_clean_missing_values_Washington DataFrame is analyzed then by the describe() method resulting in that the Top 25% (Q1) of the properties in Washington, 
 United States are forecasted to gain
 in the coming year between 55,927 USD to 2,190,000 USD.
