@@ -1,5 +1,10 @@
 # Fianl Project Data Analyst Program Hebrew University of Jerusalem
 
+## Table of Contents
+- [Project Overview](#Project-Overview)
+
+
+
 ## Project Overview
 This project goal was to consult a potential investor regading his investing strategy in short-term rental properties in Washington, United States. 
 
