@@ -71,7 +71,7 @@ Analyzing listings_clean_missing_values_Washington_Q1_Entire_home DataFrame by t
 evaluating the results by a Bar graph using the the plot() method, reveals that the these properties significantly most common number of Accommodates is 6 people.
 
 
-## Conclusion
+## Recommendation
 Following the above Data Analysis it can be recommended to the potential investor to purchase properties in Washington, United States which are Entire Home by
 type, located in Seattle, which their room type is Entire Home / Apartment, and which are suitable to accommodate 6 people, as these properties are forcasted to
 gain the higest revenue in the coming year.
