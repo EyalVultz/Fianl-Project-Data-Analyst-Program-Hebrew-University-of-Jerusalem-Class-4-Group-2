@@ -12,6 +12,7 @@ This project goal was to consult a potential investor regading his investing str
 - Python - Data Analysis and Visualization (graphs).
 - Microsoft PowerPoint - Reporting. 
 
+
 The Data Ananlysis contained the following Stages
 ## Stage 1: Importing relevant Python libraries
 In this stage the relevant Python libraries, Pandas, Numpy, and Matplotlib, are imported.
