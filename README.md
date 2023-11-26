@@ -26,7 +26,7 @@ This stage includes the data file 'listings.csv' reading into listings, a Panda'
 
 ### Stage 3: Data cleaning
 listings is filtered in this stage from duplicated records (rows) by the drop_duplicates() method and from irrelevant fileds (columns) by the drop () method
-to a new DataFrame, listings_clean. This Dataframe is cleaned from rows containing Missing values by the dropna() method to a new DataFrame 
+to a new DataFrame, listings_clean. This Dataframe is cleaned from rows containing Missing values by the dropna() method to a new DataFrame, 
 listings_clean_missing_values.
 
 ### Stage 4: Filtering out properties (rows) not located in Washington
