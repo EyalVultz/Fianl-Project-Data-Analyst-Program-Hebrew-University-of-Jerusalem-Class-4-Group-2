@@ -15,6 +15,9 @@ This project goal was to consult a potential investor regading his investing str
 - Microsoft PowerPoint - Reporting. 
 
 
+## 
+
+
 ## Data Analysis
 The Data Ananlysis contained the following Stages:
 
