@@ -82,7 +82,8 @@ Trying to further specify the above Q1 properties by their Neighbourhood reveale
 Analyzing listings_clean_missing_values_Washington_Q1_Entire_home DataFrame by the number of Accommodates, while using the value_counts() method followed by 
 evaluating the results by a Bar graph using the the plot() method, reveals that the these properties significantly most common number of Accommodates is 6 people.
 
-![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/de5b7c39-3d5c-4b71-a711-150980373819)
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/c8c1f922-9771-49ac-8089-8ff6fbe473eb)
+
 
 
 
