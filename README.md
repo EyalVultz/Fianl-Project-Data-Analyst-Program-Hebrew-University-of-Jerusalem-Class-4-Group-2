@@ -6,6 +6,7 @@
 - [Tools](#Tools)
 - [Exploratory Data Analysis](#Exploratory-Data-Analysis)
 - [Data Analysis](#Data-Analysis)
+- [Recommendation](#Recommendation)
 
 
 
