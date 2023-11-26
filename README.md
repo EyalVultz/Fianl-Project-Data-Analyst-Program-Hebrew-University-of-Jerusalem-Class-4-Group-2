@@ -67,6 +67,9 @@ United States are forecasted to gain in the coming year between 55,927 USD to 2,
 listings_clean_missing_values_Washington DataFrame is filtered then according to the above by the query() method, while forming a new Dataframe named 
 listings_clean_missing_values_Washington_Q1.
 
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/c1c5ff65-a1cd-4de0-9276-405532d89ab9)
+
+
 ### Stage 6: Analyzing Top 25% properties in Washington, United States by Coming year Forecasted Revenue, by their Property Type
 Analyzing Top 25% properties in Washington, United States by Coming year Forecasted Revenue by Property Type is performed in this stage, while using the
 value_counts() method, followed by evaluation of the results by a Bar graph by using the the plot() method. This reveals that the these properties significantly
