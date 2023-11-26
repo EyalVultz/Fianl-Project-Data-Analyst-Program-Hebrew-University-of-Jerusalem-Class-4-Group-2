@@ -51,8 +51,8 @@ listings_clean_missing_values_Washington_Q1.
 
 ### Stage 6: Analyzing Top 25% properties in Washington, United States by Coming year Forecasted Revenue, by their Property Type
 Analyzing Top 25% properties in Washington, United States by Coming year Forecasted Revenue by Property Type is performed in this stage, while using the
-value_counts() method, followed by evaluating the results by a Bar graph by using the the plot() method, reveals that the these properties significantly most 
-common type is Entire Home. listings_clean_missing_values_Washington_Q1 DataFrame is filtered then according to the above by the str.contains() method, while
+value_counts() method, followed by evaluation of the results by a Bar graph by using the the plot() method. This reveals that the these properties significantly
+most common type is Entire Home. listings_clean_missing_values_Washington_Q1 DataFrame is filtered then according to the above by the str.contains() method, while
 forming a new Dataframe named listings_clean_missing_values_Washington_Q1_Entire_home. 
 
 ### Stage 7: Further Filtration by Neighbourhood and then by Room Type
