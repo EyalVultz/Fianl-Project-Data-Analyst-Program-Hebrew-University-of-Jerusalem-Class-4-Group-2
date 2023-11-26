@@ -12,24 +12,25 @@ This project goal was to consult a potential investor regading his investing str
 - Python (Jupyter Notebook) - Data Analysis and Visualization (graphs).
 - Microsoft PowerPoint - Reporting. 
 
+## Data Analysis
+The Data Ananlysis contained the following Stages:
 
-The Data Ananlysis contained the following Stages
-## Stage 1: Importing relevant Python libraries
+### Stage 1: Importing relevant Python libraries
 In this stage the relevant Python libraries, Pandas, Numpy, and Matplotlib, are imported.
 
-## Stage 2: Reading the data file
+### Stage 2: Reading the data file
 This stage includes the data file 'listings.csv' reading into listings, a Panda's DataFrame.
 
-## Stage 3: Data cleaning
+### Stage 3: Data cleaning
 listings is filtered in this stage from duplicated records (rows) by the drop_duplicates() method and from irrelevant fileds (columns) by the drop () method
 to a new DataFrame, listings_clean. This Dataframe is cleaned from rows containing Missing values by the dropna() method to a new DataFrame 
 listings_clean_missing_values.
 
-## Stage 4: Filtering out properties (rows) not located in Washington
+### Stage 4: Filtering out properties (rows) not located in Washington
 In this stage listings_clean_missing_values is cleaned from properties (rows) which are not located in Washington based on the 'neighbourhood' field and form a new 
 DataFrame, listings_clean_missing_values_Washington.
 
-## Stage 5: Creating a new column for the KPI calculation
+### Stage 5: Creating a new column for the KPI calculation
 The KPI which I have chosen to use is the Top 25% (Q1) propertirs according to thier Forecasted Revenue in the Coming year, which is the most important issue for
 an investor, in the abscence of the properties'
 purchasing price data, while using an annual data can eliminate the price seasonality phenomenon of each property. 
@@ -46,16 +47,16 @@ in the coming year between 55,927 USD to 2,190,000 USD.
 listings_clean_missing_values_Washington DataFrame is filtered then according to the above by the query() method, while forming a new Dataframe named 
 listings_clean_missing_values_Washington_Q1.
 
-## Stage 6: Analyzing Top 25% properties in Washington, United States by Coming year Forecasted Revenue, by their Property Type
+### Stage 6: Analyzing Top 25% properties in Washington, United States by Coming year Forecasted Revenue, by their Property Type
 Analyzing Top 25% properties in Washington, United States by Coming year Forecasted Revenue by Property Type is performed in this stage, while using the
 value_counts() method, followed by evaluating the results by a Bar graph using the the plot() method, reveals that the these properties significantly most 
 common type is Entire Home. listings_clean_missing_values_Washington_Q1 DataFrame is filtered then according to the above by the str.contains() method, while
 forming a new Dataframe named listings_clean_missing_values_Washington_Q1_Entire_home. 
 
-## Stage 7: Further Filtration by Neighbourhood and then by Room Type
+### Stage 7: Further Filtration by Neighbourhood and then by Room Type
 Trying to further specify the above Q1 properties by their Neighbourhood revealed that all of them are located in Seattle, and their Room Type is Entire home/apt.
 
-## Stage 8: Final Filtration by Accommodates Number
+### Stage 8: Final Filtration by Accommodates Number
 Analyzing listings_clean_missing_values_Washington_Q1_Entire_home DataFrame by the number of Accommodates, while using the value_counts() method followed by 
 evaluating the results by a Bar graph using the the plot() method, reveals that the these properties significantly most common number of Accommodates is 6 people.
 
