@@ -52,6 +52,9 @@ formation for its host, and as follow:
 'price' * (365 - 'availability_365').
 These calculations' results form a new column named 'forecasted revenue' in the DataFrame listings_clean_missing_values_Washington. 
 Prior to the formation of the abpve KPI column it is needed to convert the 'price' field (column) variable type from currency to float.
+...python
+listings_clean_missing_values_Washington['price'] = listings_clean_missing_values_Washington['price'].replace('\$', '', regex=True).replace('\,', '', regex=True).astype(float)
+...
 listings_clean_missing_values_Washington DataFrame is analyzed then by the describe() method, resulting in that the Top 25% (Q1) of the properties in Washington, 
 United States are forecasted to gain in the coming year between 55,927 USD to 2,190,000 USD.
 listings_clean_missing_values_Washington DataFrame is filtered then according to the above by the query() method, while forming a new Dataframe named 
