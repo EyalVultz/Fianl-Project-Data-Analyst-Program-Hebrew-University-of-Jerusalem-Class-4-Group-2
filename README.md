@@ -52,7 +52,7 @@ In this stage listings_clean_missing_values is cleaned from properties (rows) wh
 while forming a new DataFrame, listings_clean_missing_values_Washington.
 
 ### Stage 5: Creating a new column for the KPI calculation
-The KPI which have been chosen to use is the Top 25% (Q1) propertirs according to thier Forecasted Revenue in the Coming year, which is the most important issue for
+The KPI which has been chosen to use is the Top 25% (Q1) propertirs according to thier Forecasted Revenue in the Coming year, which is the most important issue for
 an investor, in the abscence of the properties'
 purchasing price data. The use of an annual data eliminates the price seasonality phenomenon of each property. 
 The Forecasted Revenue in the Coming year for each property is calculated by multiplying the 'price' field (column) by the diffrence between 365 (days) and the
