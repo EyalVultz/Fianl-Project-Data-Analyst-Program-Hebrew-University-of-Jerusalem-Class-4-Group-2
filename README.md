@@ -1,4 +1,4 @@
-# Fianl Project Data Analyst Program Hebrew University of Jerusalem Class No. 4
+# Fianl Project Data Analyst Program Hebrew University of Jerusalem Class No. 4 Group 2
 
 ## Table of Contents
 - [Project Overview](#Project-Overview)
