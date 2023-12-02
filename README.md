@@ -54,13 +54,11 @@ In this stage listings_clean_missing_values was cleaned from properties (rows) w
 while forming a new DataFrame, listings_clean_missing_values_Washington.
 
 ### Stage 5: Creating a new column for the KPI calculation
-The KPI which was chosen was the Top 25% (Q1) propertirs according to thier Forecasted Revenue in the Coming year, which is the most important issue for
-an investor, in the abscence of the properties'
-purchasing price data. The use of an annual data eliminated the price seasonality phenomenon of each property. 
+The KPI which was chosen was the propertirs with the Coming Year Forecasted Revenue, which is the most important issue for an investor, in the abscence of the
+properties' acqusition price data. The use of an annual data aims to eliminate the phenomenon of price seasonality of each property. 
 The Forecasted Revenue in the Coming year for each property was calculated by multiplying the 'price' field (column) by the diffrence between 365 (days) and the
-'availability_365' field (column), while the 
-last difference result gives the forecasted number of days in which a givven property is forecasted to be rented in the coming year, resulting in a Revenue 
-formation for its host, and as follow:
+'availability_365' field (column), while the last difference result gives the forecasted number of days in which a givven property is forecasted to be rented in 
+the coming year, resulting in a Revenue formation for its host, and as follow:
 'price' * (365 - 'availability_365').
 These calculations' results formed a new column named 'forecasted revenue' in the DataFrame listings_clean_missing_values_Washington. 
 Prior to the formation of the above KPI column it was needed to convert the 'price' field (column) variable type from currency to float.
