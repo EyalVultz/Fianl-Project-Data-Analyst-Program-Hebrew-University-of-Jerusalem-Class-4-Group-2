@@ -90,7 +90,7 @@ Trying to further specify the above Q1, Q2 and Q3 properties by their Neighbouth
 was the Neighbourhood of all these properties, while forming 3 new DataFrames named: 
 listings_clean_missing_values_Washington_Q1_Entire_home_Entire_home_Neighbourhood,
 listings_clean_missing_values_Washington_Q2_Entire_home_Entire_home_Neighbourhood, and
-listings_clean_missing_values_Washington_Q3_Entire_home_Entire_homeNeighbourhood.
+listings_clean_missing_values_Washington_Q3_Entire_home_Entire_home_Neighbourhood.
 
 ### Stage 10 - Route A: Further Filtration by number of Accommodates
 
