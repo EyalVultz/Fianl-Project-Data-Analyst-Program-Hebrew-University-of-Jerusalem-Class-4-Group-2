@@ -72,7 +72,7 @@ listings_clean_missing_values_Washington_Q3. and listings_clean_missing_values_W
 
 ![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/c1c5ff65-a1cd-4de0-9276-405532d89ab9)
 
-### Stage 7 - Routh A: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Property Type
+### Stage 7 - Route A: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Property Type
 Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Property Type was performed in this stage, while using
 the value_counts() method, followed by evaluation of the results by a Bar graph by using the the plot() method for each one of the above 4 DataFrames. 
 This revealed that significantly the most common Type of the properties in the above Q1, Q2, and Q3 most common type was Entire Home. 
@@ -80,14 +80,19 @@ listings_clean_missing_values_Washington_Q1, listings_clean_missing_values_Washi
 then according to the above by the str.contains() method, while forming 3 new Dataframe named listings_clean_missing_values_Washington_Q1_Entire_home,
 listings_clean_missing_values_Washington_Q2_Entire_home, and listings_clean_missing_values_Washington_Q3_Entire_home
 
-### Stage 7: Further Filtration by Neighbourhood and then by Room Type
-Trying to further specify the above Q1 properties by their Neighbourhood revealed that all of them are located in Seattle, and their Room Type is Entire home/apt.
+### Stage 8 - Route A: Further Filtration by Room Type
+Trying to further specify the above Q1, Q2 and Q3 properties by their Room Type in the same way as describe in the previous paragraph, revealed that Entire home/apt
+was the Room Type of all these properties, while forming 3 new DataFrames named: listings_clean_missing_values_Washington_Q1_Entire_home_Entire_home,
+listings_clean_missing_values_Washington_Q2_Entire_home_Entire_home, and listings_clean_missing_values_Washington_Q3_Entire_home_Entire_home.
 
-### Stage 8: Final Filtration by Accommodates Number
-Analyzing listings_clean_missing_values_Washington_Q1_Entire_home DataFrame by the number of Accommodates, while using the value_counts() method followed by 
-evaluating the results by a Bar graph using the the plot() method, revealed that the these properties significantly most common number of Accommodates is 6 people.
+### Stage 9 - Route A: Further Filtration by Neighbourhood
+Trying to further specify the above Q1, Q2 and Q3 properties by their Neighbouthood in the same way as describe in the previous paragraph, revealed that Seattle
+was the Neighbourhood of all these properties, while forming 3 new DataFrames named: 
+listings_clean_missing_values_Washington_Q1_Entire_home_Entire_home_Neighbourhood,
+listings_clean_missing_values_Washington_Q2_Entire_home_Entire_home_Neighbourhood, and
+listings_clean_missing_values_Washington_Q3_Entire_home_Entire_homeNeighbourhood.
 
-
+### Stage 10 - Route A: Further Filtration by number of Accommodates
 
 ## Recommendation
 Following the above Data Analysis it can be recommended to the potential investor to purchase properties in Washington, United States which are Entire Home by
