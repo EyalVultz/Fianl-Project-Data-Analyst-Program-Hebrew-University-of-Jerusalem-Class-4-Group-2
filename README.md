@@ -62,18 +62,23 @@ the coming year, resulting in a Revenue formation for its host, and as follow:
 'price' * (365 - 'availability_365').
 These calculations' results formed a new column named 'forecasted revenue' in the DataFrame listings_clean_missing_values_Washington. 
 Prior to the formation of the above KPI column it was needed to convert the 'price' field (column) variable type from currency to float.
+
+### Stage 6 - Route A: Trial to Characterize the Top 25% (Q1) properties by their Coming Year Forecasted Revenue
 listings_clean_missing_values_Washington DataFrame was analyzed then by the describe() method, resulting in that the Top 25% (Q1) of the properties in Washington, 
-United States were forecasted to gain in the coming year between 55,927 USD to 2,190,000 USD.
-listings_clean_missing_values_Washington DataFrame was filtered then according to the above by the query() method, while forming a new Dataframe named 
-listings_clean_missing_values_Washington_Q1.
+United States were forecasted to gain in the coming year between 49,728 USD to 2,190,000 USD, Q2 between 29,186 USD to 49,727 USD, Q3 between 11,784 USD to
+29,185 USD and Q4 from 0 to 11,783 USD. listings_clean_missing_values_Washington DataFrame was filtered then according to the above by the query() method, 
+while forming 4 new Dataframes named: listings_clean_missing_values_Washington_Q1, listings_clean_missing_values_Washington_Q2, 
+listings_clean_missing_values_Washington_Q3. and listings_clean_missing_values_Washington_Q4.
 
 ![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/c1c5ff65-a1cd-4de0-9276-405532d89ab9)
 
-### Stage 6: Analyzing Top 25% properties in Washington, United States by Coming year Forecasted Revenue, by their Property Type
-Analyzing Top 25% properties in Washington, United States by Coming year Forecasted Revenue by Property Type was performed in this stage, while using the
-value_counts() method, followed by evaluation of the results by a Bar graph by using the the plot() method. This revealed that the these properties significantly
-most common type is Entire Home. listings_clean_missing_values_Washington_Q1 DataFrame was filtered then according to the above by the str.contains() method, while
-forming a new Dataframe named listings_clean_missing_values_Washington_Q1_Entire_home. 
+### Stage 7 - Routh A: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Property Type
+Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Property Type was performed in this stage, while using
+the value_counts() method, followed by evaluation of the results by a Bar graph by using the the plot() method for each one of the above 4 DataFrames. 
+This revealed that significantly the most common Type of the properties in the above Q1, Q2, and Q3 most common type was Entire Home. 
+listings_clean_missing_values_Washington_Q1, listings_clean_missing_values_Washington_Q2, and listings_clean_missing_values_Washington_Q3 DataFrames were filtered
+then according to the above by the str.contains() method, while forming 3 new Dataframe named listings_clean_missing_values_Washington_Q1_Entire_home,
+listings_clean_missing_values_Washington_Q2_Entire_home, and listings_clean_missing_values_Washington_Q3_Entire_home
 
 ### Stage 7: Further Filtration by Neighbourhood and then by Room Type
 Trying to further specify the above Q1 properties by their Neighbourhood revealed that all of them are located in Seattle, and their Room Type is Entire home/apt.
@@ -81,9 +86,6 @@ Trying to further specify the above Q1 properties by their Neighbourhood reveale
 ### Stage 8: Final Filtration by Accommodates Number
 Analyzing listings_clean_missing_values_Washington_Q1_Entire_home DataFrame by the number of Accommodates, while using the value_counts() method followed by 
 evaluating the results by a Bar graph using the the plot() method, revealed that the these properties significantly most common number of Accommodates is 6 people.
-
-![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/c8c1f922-9771-49ac-8089-8ff6fbe473eb)
-
 
 
 
