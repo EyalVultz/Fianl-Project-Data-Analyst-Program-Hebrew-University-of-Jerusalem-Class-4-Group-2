@@ -43,9 +43,11 @@ In this stage the relevant Python libraries, Pandas, Numpy, and Matplotlib, were
 This stage includes the data file 'listings.csv' reading into listings, a Panda's DataFrame.
 
 ### Stage 3: Data cleaning
-listings was filtered in this stage from duplicated records (rows) by the drop_duplicates() method and from irrelevant fileds (columns) by the drop () method
-to a new DataFrame, listings_clean. This Dataframe was cleaned then from rows containing Missing Values by the dropna() method to a new DataFrame, 
-listings_clean_missing_values. It should be indicted that 
+listings was filtered in this stage from duplicated records (rows) by the drop_duplicates() method and from irrelevant fileds (columns) by the drop() method
+to a new DataFrame, listings_clean. It should be indicated that with the 'bedrooms' and 'beds' fileds the dropna() method resulted in loosing of ~44% of the 
+records, while filtering thoese fileds out resulted in loosing just loosing ~27% with the of the records by the last method. This was due to 'neighbourhood' field
+keeping, which was found essential for assuring that the properties are located indeed in Washington and as described in the next paragraph. 
+The listings_clean Dataframe was cleaned then from rows containing Missing Values by the dropna() method to a new DataFrame, listings_clean_missing_values. 
 
 ### Stage 4: Filtering out properties (rows) not located in Washington
 In this stage listings_clean_missing_values was cleaned from properties (rows) which are not located in Washington, based on the 'neighbourhood' field (column),
