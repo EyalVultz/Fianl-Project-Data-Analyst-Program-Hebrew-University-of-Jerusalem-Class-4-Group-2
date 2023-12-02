@@ -27,10 +27,10 @@ This project goal was to consult a potential investor regading his investing str
 
 ## Exploratory Data Analysis
 The Exploratory Data Analysis (EDA) of this projects includes answering the following questions:
-1. What is the most common Type of the Properties with the highest by forecasted Coming year Revenue in Washington, United States?
-2. In which Neighbourhood in Washington, United States most of the above Q1 Properties are located?
-3. What is the most common Room Type of the above 2 Properties?
-4. What is the most cpmmon number of Accommodates of the above 3 Properties?
+1. What is the Type of the Properties with the highest Forecasted Coming Year Revenue in Washington, United States?
+2. In which Neighbourhood in Washington, United States are located the Properties with the highest Forecasted Coming Year Revenue?
+3. What is the Room Type of the Properties with the highest Forecasted Coming Year Revenue in Washington, United States?
+4. What is the number of Accommodates of the Properties with the highest Forecasted Coming Year Revenue in Washington, United States?
 
 
 ## Data Analysis
