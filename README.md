@@ -93,6 +93,13 @@ listings_clean_missing_values_Washington_Q2_Entire_home_Entire_home_Neighbourhoo
 listings_clean_missing_values_Washington_Q3_Entire_home_Entire_home_Neighbourhood.
 
 ### Stage 10 - Route A: Further Filtration by number of Accommodates
+Trying to further specify the above Q1, Q2 and Q3 properties by their number of Accommodates in the same way as describe in the previous paragraph, revealed that
+6 was the most common number of Accommodates in Q1 and Q2, while 4 was the most common of accommodates in Q3.
+Following that this Data Analysis Route was not able to significantly characterize the Top 25% (Q1) properties by their Coming Year Forecasted Revenue,
+it was decided to try to this by relating to the entire population of properties in Washington, United States, and as follow:
+
+
+
 
 ## Recommendation
 Following the above Data Analysis it can be recommended to the potential investor to purchase properties in Washington, United States which are Entire Home by
