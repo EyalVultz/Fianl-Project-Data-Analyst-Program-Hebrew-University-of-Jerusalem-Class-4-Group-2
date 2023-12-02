@@ -75,7 +75,7 @@ listings_clean_missing_values_Washington_Q3. and listings_clean_missing_values_W
 ### Stage 7 - Route A: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Property Type
 Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Property Type was performed in this stage, while using
 the value_counts() method, followed by evaluation of the results by a Bar graph by using the the plot() method for each one of the above 4 DataFrames. 
-This revealed that significantly the most common Type of the properties in the above Q1, Q2, and Q3 most common type was Entire Home. 
+This revealed that significantly the most common Type of the properties in the above Q1, Q2, and Q3 most common type was Entire home. 
 listings_clean_missing_values_Washington_Q1, listings_clean_missing_values_Washington_Q2, and listings_clean_missing_values_Washington_Q3 DataFrames were filtered
 then according to the above by the str.contains() method, while forming 3 new Dataframe named listings_clean_missing_values_Washington_Q1_Entire_home,
 listings_clean_missing_values_Washington_Q2_Entire_home, and listings_clean_missing_values_Washington_Q3_Entire_home
@@ -95,13 +95,34 @@ listings_clean_missing_values_Washington_Q3_Entire_home_Entire_home_Neighbourhoo
 ### Stage 10 - Route A: Further Filtration by number of Accommodates
 Trying to further specify the above Q1, Q2 and Q3 properties by their number of Accommodates in the same way as describe in the previous paragraph, revealed that
 6 was the most common number of Accommodates in Q1 and Q2, while 4 was the most common of accommodates in Q3.
-Following that this Data Analysis Route was not able to significantly characterize the Top 25% (Q1) properties by their Coming Year Forecasted Revenue,
-it was decided to try to this by relating to the entire population of properties in Washington, United States, and as follow:
 
+### Stage 6 - Route B
+Following that the Data Analysis Route A was not able to significantly characterize the Top 25% (Q1) properties by their Coming Year Forecasted Revenue,
+it was decided to try to this by relating to the entire population of properties in Washington, United States.
 
+### Stage 7 - Route B: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Property Type
+Applying the plot() method together with the scatter() method on the listings_clean_missing_values_Washington DataFrame, using the forecasted_revenue field for the
+x-axis and property_type field for the y-axis for convenience, revealed that there are 2 outliers records which have forecasted_revenue bigger that 2,000,000 USD
+in the Coming Year. Filtering out these records, by forming a new DataFrame named listings_clean_missing_values_Washington_no_outliers. revealed that the most
+Property Type which relates to the highest Coming Year Forecasted Revenue is Entire home.
+
+### Stage 8 - Route B: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Room Type
+Applying the plot() method together with the scatter() method on the listings_clean_missing_values_Washington_no_outliers, using the forecasted_revenue field for
+the x-axis and room_type field for the y-axis for convenience, revealed that the Room Type which relates to the highest Coming Year Forecasted Revenue is 
+Etire home/apt.
+
+### Stage 9 - Route B: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Neighbourhood
+Applying the plot() method together with the scatter() method on the listings_clean_missing_values_Washington_no_outliers, using the forecasted_revenue field for
+the x-axis and neighbourhood field for the y-axis for convenience, revealed that the Neighbourhood which relates to the highest Coming Year Forecasted Revenue is 
+Seattle.
+
+### Stage 10 - Route B: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their number of Accommodates
+Applying the plot() method together with the scatter() method on the listings_clean_missing_values_Washington_no_outliers, using the forecasted_revenue field for
+the x-axis and accommodates field for the y-axis for convenience, revealed that the numbers of Accommodates which relate to the highest Coming Year Forecasted
+Revenue are between 6 to 10.
 
 
 ## Recommendation
 Following the above Data Analysis it can be recommended to the potential investor to purchase properties in Washington, United States which are Entire Home by
-type, located in Seattle, which their room type is Entire Home / Apartment, and which are suitable to accommodate 6 people, as these properties are forcasted to
-gain the higest revenue in the coming year.
+their type, their Room Type is Entire Home / Apartmentlocated, which are located in Seattle, and which are suitable to accommodate 6 to 10 people, as these 
+properties are Forcasted to gain the higest Revenue in the Coming Year.
