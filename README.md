@@ -70,8 +70,6 @@ United States were forecasted to gain in the coming year between 49,728 USD to 2
 while forming 4 new Dataframes named: listings_clean_missing_values_Washington_Q1, listings_clean_missing_values_Washington_Q2, 
 listings_clean_missing_values_Washington_Q3. and listings_clean_missing_values_Washington_Q4.
 
-![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/c1c5ff65-a1cd-4de0-9276-405532d89ab9)
-
 ### Stage 7 - Route A: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Property Type
 Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Property Type was performed in this stage, while using
 the value_counts() method, followed by evaluation of the results by a Bar graph by using the the plot() method for each one of the above 4 DataFrames. 
