@@ -70,8 +70,6 @@ United States were forecasted to gain in the coming year between 49,728 USD to 2
 while forming 4 new Dataframes named: listings_clean_missing_values_Washington_Q1, listings_clean_missing_values_Washington_Q2, 
 listings_clean_missing_values_Washington_Q3. and listings_clean_missing_values_Washington_Q4.
 
-![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/e8211fe7-07e4-4192-8ce4-27ff3326601f)
-
 ### Stage 7 - Route A: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Property Type
 Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Property Type was performed in this stage, while using
 the value_counts() method, followed by evaluation of the results by a Bar graph by using the the plot() method for each one of the above 4 DataFrames. 
@@ -80,10 +78,25 @@ listings_clean_missing_values_Washington_Q1, listings_clean_missing_values_Washi
 then according to the above by the str.contains() method, while forming 3 new Dataframe named listings_clean_missing_values_Washington_Q1_Entire_home,
 listings_clean_missing_values_Washington_Q2_Entire_home, and listings_clean_missing_values_Washington_Q3_Entire_home
 
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/84932a06-fbb5-48a3-990e-77c276c7fe00)
+
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/efe12b68-6f20-40f3-bcda-b0d2a82e9c68)
+
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/f37fb4f9-849c-48b2-8346-9696567c5861)
+
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/35fa6c88-d8fc-489a-9d25-bcccf2c51023)
+
+
 ### Stage 8 - Route A: Further Filtration by Room Type
 Trying to further specify the above Q1, Q2 and Q3 properties by their Room Type in the same way as describe in the previous paragraph, revealed that Entire home/apt
 was the Room Type of all these properties, while forming 3 new DataFrames named: listings_clean_missing_values_Washington_Q1_Entire_home_Entire_home,
 listings_clean_missing_values_Washington_Q2_Entire_home_Entire_home, and listings_clean_missing_values_Washington_Q3_Entire_home_Entire_home.
+
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/9cd42e9d-9be6-426a-b505-356fc3562a8c)
+
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/bff06e9c-b2a1-48d0-9628-0c314154a0ee)
+
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/b8d8ecc7-adf7-407d-ba94-a625ac6c1dd0)
 
 ### Stage 9 - Route A: Further Filtration by Neighbourhood
 Trying to further specify the above Q1, Q2 and Q3 properties by their Neighbouthood in the same way as describe in the previous paragraph, revealed that Seattle
@@ -92,9 +105,21 @@ listings_clean_missing_values_Washington_Q1_Entire_home_Entire_home_Neighbourhoo
 listings_clean_missing_values_Washington_Q2_Entire_home_Entire_home_Neighbourhood, and
 listings_clean_missing_values_Washington_Q3_Entire_home_Entire_home_Neighbourhood.
 
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/8ae7ad89-5fe2-47de-9393-a018f6f2defd)
+
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/a3c0dc9e-63b2-4805-9c1a-15650e680867)
+
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/8f3a35e1-4fae-4fdd-8040-2537b871fb36)
+
 ### Stage 10 - Route A: Further Filtration by number of Accommodates
 Trying to further specify the above Q1, Q2 and Q3 properties by their number of Accommodates in the same way as describe in the previous paragraph, revealed that
 6 was the most common number of Accommodates in Q1 and Q2, while 4 was the most common of accommodates in Q3.
+
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/70755b58-f6cc-4ab0-9d88-41b8c78ac1bc)
+
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/28a85ee2-0e16-46d6-83a5-4bd9946b71e6)
+
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/6d9af246-1475-4206-b185-7ae4c2f43c15)
 
 ### Stage 6 - Route B
 Following that the Data Analysis Route A was not able to significantly characterize the Top 25% (Q1) properties by their Coming Year Forecasted Revenue,
@@ -103,23 +128,35 @@ it was decided to try to this by relating to the entire population of properties
 ### Stage 7 - Route B: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Property Type
 Applying the plot() method together with the scatter() method on the listings_clean_missing_values_Washington DataFrame, using the forecasted_revenue field for the
 x-axis and property_type field for the y-axis for convenience, revealed that there are 2 outliers records which have forecasted_revenue bigger that 2,000,000 USD
-in the Coming Year. Filtering out these records, by forming a new DataFrame named listings_clean_missing_values_Washington_no_outliers. revealed that the most
-Property Type which relates to the highest Coming Year Forecasted Revenue is Entire home.
+in the Coming Year. 
+
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/e8f8d6f4-db10-4a61-9607-6d300940382c)
+
+Filtering out these records, by forming a new DataFrame named listings_clean_missing_values_Washington_no_outliers. revealed that the most Property Type which relates 
+to the highest Coming Year Forecasted Revenue is Entire home.
+
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/8642b208-9e88-4b32-af3f-55fce14376f6)
 
 ### Stage 8 - Route B: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Room Type
 Applying the plot() method together with the scatter() method on the listings_clean_missing_values_Washington_no_outliers, using the forecasted_revenue field for
 the x-axis and room_type field for the y-axis for convenience, revealed that the Room Type which relates to the highest Coming Year Forecasted Revenue is 
 Etire home/apt.
 
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/4b253181-576e-4c15-8d3b-421f4feb94e0)
+
 ### Stage 9 - Route B: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Neighbourhood
 Applying the plot() method together with the scatter() method on the listings_clean_missing_values_Washington_no_outliers, using the forecasted_revenue field for
 the x-axis and neighbourhood field for the y-axis for convenience, revealed that the Neighbourhood which relates to the highest Coming Year Forecasted Revenue is 
 Seattle.
 
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/a41953df-8d1f-4e49-8d52-b895cae83c33)
+
 ### Stage 10 - Route B: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their number of Accommodates
 Applying the plot() method together with the scatter() method on the listings_clean_missing_values_Washington_no_outliers, using the forecasted_revenue field for
 the x-axis and accommodates field for the y-axis for convenience, revealed that the numbers of Accommodates which relate to the highest Coming Year Forecasted
 Revenue are between 6 to 10.
+
+![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/2118a354-e98c-489b-8eae-f142d2d9b359)
 
 
 ## Recommendation
