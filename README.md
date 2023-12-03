@@ -53,7 +53,7 @@ to a new DataFrame, listings_clean_missing_values.
 ### Stage 4: Filtering out properties (rows) not located in Washington
 In this stage listings_clean_missing_values was cleaned from properties (rows) which are not located in the statet of Washington, based on the 'neighbourhood' 
 field (column), while forming a new DataFrame, listings_clean_missing_values_Washington. It was found that this action resulted in the removal of only a single 
-property was not lovated in the state of Washington, while decreasing the properties number to 4858.
+property (0.02%) which was not located in the state of Washington, while decreasing the properties number to 4858.
 
 ### Stage 5: Creating a new column for the KPI calculation
 The KPI which was chosen was the propertirs with the Coming Year Forecasted Revenue, which is the most important issue for an investor, in the abscence of the
@@ -129,7 +129,7 @@ it was decided to try to this by relating to the entire population of properties
 
 ### Stage 7 - Route B: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Property Type
 Applying the plot() method together with the scatter() method on the listings_clean_missing_values_Washington DataFrame, using the forecasted_revenue field for the
-x-axis and property_type field for the y-axis for convenience, revealed that there are 2 outliers records which have forecasted_revenue bigger that 2,000,000 USD
+x-axis and property_type field for the y-axis for convenience, revealed that there are 2 outliers records (0.04%) which have forecasted_revenue bigger that 2,000,000 USD
 in the Coming Year. 
 
 ![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/e8f8d6f4-db10-4a61-9607-6d300940382c)
