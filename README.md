@@ -44,14 +44,16 @@ This stage includes the data file 'listings.csv' reading into listings, a Panda'
 
 ### Stage 3: Data cleaning
 listings was filtered in this stage from duplicated records (rows) by the drop_duplicates() method and from irrelevant fileds (columns) by the drop() method
-to a new DataFrame, listings_clean. It should be indicated that with the 'bedrooms' and 'beds' fileds the dropna() method resulted in loosing of ~44% of the 
-records, while filtering thoese fileds out resulted in loosing just loosing ~27% with the of the records by the last method. This was due to 'neighbourhood' field
-keeping, which was found essential for assuring that the properties are located indeed in Washington and as described in the next paragraph. 
-The listings_clean Dataframe was cleaned then from rows containing Missing Values by the dropna() method to a new DataFrame, listings_clean_missing_values. 
+to a new DataFrame, listings_clean. It should be indicated that with the 'bedrooms' and 'beds' fileds included in the DataFrame the dropna() method resulted 
+in loosing of ~44% of the records, from 6636 down to 3739, while filtering thoese fileds out resulted in loosing of just ~27% of the records, down to 4859 by
+the same method. This was due to 'neighbourhood' field keeping, which was found essential for assuring that the properties are located indeed in the state of 
+Washington and as described in the next paragraph. The listings_clean Dataframe was cleaned then from rows containing Missing Values by the dropna() method 
+to a new DataFrame, listings_clean_missing_values. 
 
 ### Stage 4: Filtering out properties (rows) not located in Washington
-In this stage listings_clean_missing_values was cleaned from properties (rows) which are not located in Washington, based on the 'neighbourhood' field (column),
-while forming a new DataFrame, listings_clean_missing_values_Washington.
+In this stage listings_clean_missing_values was cleaned from properties (rows) which are not located in the statet of Washington, based on the 'neighbourhood' 
+field (column), while forming a new DataFrame, listings_clean_missing_values_Washington. It was found that this action resulted in the removal of only a single 
+property was not lovated in the state of Washington, while decreasing the properties number to 4858.
 
 ### Stage 5: Creating a new column for the KPI calculation
 The KPI which was chosen was the propertirs with the Coming Year Forecasted Revenue, which is the most important issue for an investor, in the abscence of the
