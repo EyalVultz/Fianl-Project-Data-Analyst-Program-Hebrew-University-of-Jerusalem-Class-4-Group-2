@@ -27,10 +27,10 @@ This project goal was to consult a potential investor regading his investing str
 
 ## Exploratory Data Analysis
 The Exploratory Data Analysis (EDA) of this projects includes answering the following questions:
-1. What is the Type of the Properties with the highest Forecasted Coming Year Revenue in Washington, United States?
-2. In which Neighbourhood in Washington, United States are located the Properties with the highest Forecasted Coming Year Revenue?
-3. What is the Room Type of the Properties with the highest Forecasted Coming Year Revenue in Washington, United States?
-4. What is the number of Accommodates of the Properties with the highest Forecasted Coming Year Revenue in Washington, United States?
+1. What is the Type of the Properties with the highest Forecasted  Revenue in Washington, United States?
+2. In which Neighbourhood in Washington, United States are located the Properties with the highest Forecasted  Revenue?
+3. What is the Room Type of the Properties with the highest Forecasted  Revenue in Washington, United States?
+4. What is the number of Accommodates of the Properties with the highest Forecasted  Revenue in Washington, United States?
 
 
 ## Data Analysis
@@ -56,24 +56,24 @@ field (column), while forming a new DataFrame, listings_clean_missing_values_Was
 property (0.02%) which was not located in the state of Washington, while decreasing the properties number to 4858.
 
 ### Stage 5: Creating a new column for the KPI calculation
-The KPI which was chosen was the propertirs with the Coming Year Forecasted Revenue, which is the most important issue for an investor, in the abscence of the
+The KPI which was chosen was the propertirs with the  Forecasted Revenue, which is the most important issue for an investor, in the abscence of the
 properties' acqusition price data. The use of an annual data aims to eliminate the phenomenon of price seasonality of each property. 
-The Forecasted Revenue in the Coming year for each property was calculated by multiplying the 'price' field (column) by the diffrence between 365 (days) and the
+The Forecasted Revenue in the  for each property was calculated by multiplying the 'price' field (column) by the diffrence between 365 (days) and the
 'availability_365' field (column), while the last difference result gives the forecasted number of days in which a givven property is forecasted to be rented in 
-the coming year, resulting in a Revenue formation for its host, and as follow:
+the , resulting in a Revenue formation for its host, and as follow:
 'price' * (365 - 'availability_365').
 These calculations' results formed a new column named 'forecasted revenue' in the DataFrame listings_clean_missing_values_Washington. 
 Prior to the formation of the above KPI column it was needed to convert the 'price' field (column) variable type from currency to float.
 
-### Stage 6 - Route A: Trial to Characterize the Top 25% (Q1) properties by their Coming Year Forecasted Revenue
+### Stage 6 - Route A: Trial to Characterize the Top 25% (Q1) properties by their  Forecasted Revenue
 listings_clean_missing_values_Washington DataFrame was analyzed then by the describe() method, resulting in that the Top 25% (Q1) of the properties in Washington, 
-United States were forecasted to gain in the coming year between 49,728 USD to 2,190,000 USD, Q2 between 29,186 USD to 49,727 USD, Q3 between 11,784 USD to
+United States were forecasted to gain in the  between 49,728 USD to 2,190,000 USD, Q2 between 29,186 USD to 49,727 USD, Q3 between 11,784 USD to
 29,185 USD and Q4 from 0 to 11,783 USD. listings_clean_missing_values_Washington DataFrame was filtered then according to the above by the query() method, 
 while forming 4 new Dataframes named: listings_clean_missing_values_Washington_Q1, listings_clean_missing_values_Washington_Q2, 
 listings_clean_missing_values_Washington_Q3. and listings_clean_missing_values_Washington_Q4.
 
-### Stage 7 - Route A: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Property Type
-Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Property Type was performed in this stage, while using
+### Stage 7 - Route A: Analyzing the properties' by  Forecasted Revenue Quarterials in Washington, United States, by their Property Type
+Analyzing the properties' by  Forecasted Revenue Quarterials in Washington, United States, by their Property Type was performed in this stage, while using
 the value_counts() method, followed by evaluation of the results by a Bar graph by using the the plot() method for each one of the above 4 DataFrames. 
 This revealed that significantly the most common Type of the properties in the above Q1, Q2, and Q3 most common type was Entire home. 
 listings_clean_missing_values_Washington_Q1, listings_clean_missing_values_Washington_Q2, and listings_clean_missing_values_Washington_Q3 DataFrames were filtered
@@ -124,38 +124,38 @@ Trying to further specify the above Q1, Q2 and Q3 properties by their number of 
 ![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/6d9af246-1475-4206-b185-7ae4c2f43c15)
 
 ### Stage 6 - Route B
-Following that the Data Analysis Route A was not able to significantly characterize the Top 25% (Q1) properties by their Coming Year Forecasted Revenue,
+Following that the Data Analysis Route A was not able to significantly characterize the Top 25% (Q1) properties by their  Forecasted Revenue,
 it was decided to try to this by relating to the entire population of properties in Washington, United States.
 
-### Stage 7 - Route B: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Property Type
+### Stage 7 - Route B: Analyzing the properties' by  Forecasted Revenue Quarterials in Washington, United States, by their Property Type
 Applying the plot() method together with the scatter() method on the listings_clean_missing_values_Washington DataFrame, using the forecasted_revenue field for the
 x-axis and property_type field for the y-axis for convenience, revealed that there are 2 outliers records (0.04%) which have forecasted_revenue bigger that 2,000,000 USD
-in the Coming Year. 
+in the . 
 
 ![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/e8f8d6f4-db10-4a61-9607-6d300940382c)
 
 Filtering out these records, by forming a new DataFrame named listings_clean_missing_values_Washington_no_outliers. revealed that the most Property Type which relates 
-to the highest Coming Year Forecasted Revenue is Entire home.
+to the highest  Forecasted Revenue is Entire home.
 
 ![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/8642b208-9e88-4b32-af3f-55fce14376f6)
 
-### Stage 8 - Route B: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Room Type
+### Stage 8 - Route B: Analyzing the properties' by  Forecasted Revenue Quarterials in Washington, United States, by their Room Type
 Applying the plot() method together with the scatter() method on the listings_clean_missing_values_Washington_no_outliers, using the forecasted_revenue field for
-the x-axis and room_type field for the y-axis for convenience, revealed that the Room Type which relates to the highest Coming Year Forecasted Revenue is 
+the x-axis and room_type field for the y-axis for convenience, revealed that the Room Type which relates to the highest  Forecasted Revenue is 
 Etire home/apt.
 
 ![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/4b253181-576e-4c15-8d3b-421f4feb94e0)
 
-### Stage 9 - Route B: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their Neighbourhood
+### Stage 9 - Route B: Analyzing the properties' by  Forecasted Revenue Quarterials in Washington, United States, by their Neighbourhood
 Applying the plot() method together with the scatter() method on the listings_clean_missing_values_Washington_no_outliers, using the forecasted_revenue field for
-the x-axis and neighbourhood field for the y-axis for convenience, revealed that the Neighbourhood which relates to the highest Coming Year Forecasted Revenue is 
+the x-axis and neighbourhood field for the y-axis for convenience, revealed that the Neighbourhood which relates to the highest  Forecasted Revenue is 
 Seattle.
 
 ![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/a41953df-8d1f-4e49-8d52-b895cae83c33)
 
-### Stage 10 - Route B: Analyzing the properties' by Coming year Forecasted Revenue Quarterials in Washington, United States, by their number of Accommodates
+### Stage 10 - Route B: Analyzing the properties' by  Forecasted Revenue Quarterials in Washington, United States, by their number of Accommodates
 Applying the plot() method together with the scatter() method on the listings_clean_missing_values_Washington_no_outliers, using the forecasted_revenue field for
-the x-axis and accommodates field for the y-axis for convenience, revealed that the numbers of Accommodates which relate to the highest Coming Year Forecasted
+the x-axis and accommodates field for the y-axis for convenience, revealed that the numbers of Accommodates which relate to the highest  Forecasted
 Revenue are between 6 to 10.
 
 ![image](https://github.com/EyalVultz/Fianl-Project-Data-Analyst-Program-Hebrew-University-of-Jerusalem/assets/151207530/2118a354-e98c-489b-8eae-f142d2d9b359)
@@ -164,4 +164,4 @@ Revenue are between 6 to 10.
 ## Recommendation
 Following the above Data Analysis it can be recommended to the potential investor to purchase properties in Washington, United States which are Entire Home by
 their type, their Room Type is Entire Home / Apartmentlocated, which are located in Seattle, and which are suitable to accommodate 6 to 10 people, as these 
-properties are Forcasted to gain the higest Revenue in the Coming Year.
+properties are Forcasted to gain the higest Revenue in the .
